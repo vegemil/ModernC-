@@ -1,5 +1,8 @@
 #pragma once
 #include <iostream>
+#include "Contact.h"
+#include "Menu.h"
+#include "Owner.h"
 
 class Controller {
 private:

@@ -1,7 +1,6 @@
 #pragma once
 #include <iostream>
-
-class PersonalContact;
+#include "PersonalContact.h"
 
 class Contact {
 private:
