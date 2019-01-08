@@ -10,7 +10,7 @@ PersonalContact::PersonalContact(PersonalContact& personal)
     strcpy_s(address, 50, personal.address);
 }
 
-PersonalContact::inputContact(char* inName, char* inPhoneNumber, char* inEmail, char* inAddress) 
+void PersonalContact::inputContact(char* inName, char* inPhoneNumber, char* inEmail, char* inAddress) 
 {
     if(inName != nullptr)
     {
@@ -19,21 +19,21 @@ PersonalContact::inputContact(char* inName, char* inPhoneNumber, char* inEmail, 
 
     if(inName != nullptr)
     {
-        strcpy_s(phoneNumber, 20, inPhoneNumber);
+        strcpy_s(phoneNumber, 13, inPhoneNumber);
     }
 
     if(inName != nullptr)
     {
-        strcpy_s(email, 20, inEmail);
+        strcpy_s(email, 30, inEmail);
     }
 
     if(inName != nullptr)
     {
-        strcpy_s(address, 20, inAddress);
+        strcpy_s(address, 50, inAddress);
     }
 }
 
-PersonalContact::getContact(char* outName, char* outPhoneNumber, char* outEmail, char* outAddress)
+void PersonalContact::getContact(char* outName, char* outPhoneNumber, char* outEmail, char* outAddress)
 {
     if(outName != nullptr)
     {
@@ -42,18 +42,39 @@ PersonalContact::getContact(char* outName, char* outPhoneNumber, char* outEmail,
 
     if(outPhoneNumber != nullptr)
     {
-        strcpy_s(outPhoneNumber, 20, phoneNumber);
+        strcpy_s(outPhoneNumber, 13, phoneNumber);
     }
 
     if(outEmail != nullptr)
     {
-        strcpy_s(outEmail, 20, email);
+        strcpy_s(outEmail, 30, email);
     }
 
     if(outAddress != nullptr)
     {
-        strcpy_s(outAddress, 20, address);
+        strcpy_s(outAddress, 50, address);
     }
 }
 
+void PersonalContact::editContact(char* inName, char* inPhoneNumber, char* inEmail, char* inAddress)
+{
+    if(inName != nullptr)
+    {
+        strcpy_s(name, 20, inName);
+    }
 
+    if(inName != nullptr)
+    {
+        strcpy_s(phoneNumber, 13, inPhoneNumber);
+    }
+
+    if(inName != nullptr)
+    {
+        strcpy_s(email, 30, inEmail);
+    }
+
+    if(inName != nullptr)
+    {
+        strcpy_s(address, 50, inAddress);
+    }
+}
