@@ -11,5 +11,5 @@ public:
     Menu();                 // 생성자
     void showMenu();        // 현재 메뉴 선택 상태를 통해 메뉴 목록 출력
     void setMenuSelection(int selection);
-    void ececution();
+    int execution();
 };  
