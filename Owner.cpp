@@ -1,6 +1,5 @@
-
-#include <stdio.h>
 #include <string.h>
+
 #include "Owner.h"
 
 void Owner::inputOwnerInfo(char* inName, char* inPhoneNumber, char* inEmail, char* inAddress, char* inTwitterAccount)

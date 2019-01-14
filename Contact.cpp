@@ -1,4 +1,7 @@
+#include <cstring>
+
 #include "Contact.h"
+#include "PersonalContact.h"
 
 Contact::Contact()
 {
