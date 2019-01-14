@@ -15,7 +15,7 @@ private:
     void editOwnerInfo();
 
     void addContact();
-    void princContactList();
+    void printContactList();
     void printContactDetail();
     void editContact();
     void copyContact();
