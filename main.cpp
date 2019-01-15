@@ -2,7 +2,7 @@
 
 int main()
 {
-    Controller control;
-    control.runMainMenu();
-    return 0;
+	Controller control;
+	control.runMainMenu();
+	return 0;
 }
